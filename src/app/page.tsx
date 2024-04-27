@@ -1,16 +1,18 @@
 "use client";
 import Accordion from "@/components/molecules/Accordion";
 
+import { Alert, AlertDescription, AlertTitle } from "@/components/atoms/alert";
+
 export default function Home() {
   return (
     <main className="">
       <div className="px-4">
-        <Accordion>
-          <Accordion.Item value="item-1">
-            <Accordion.Trigger>Is this Possible</Accordion.Trigger>
-            <Accordion.Content>This is the test</Accordion.Content>
-          </Accordion.Item>
-        </Accordion>
+        <Alert>
+          <AlertTitle>Heads up!</AlertTitle>
+          <AlertDescription>
+            You can add components to your app using the cli.
+          </AlertDescription>
+        </Alert>
       </div>
     </main>
   );
