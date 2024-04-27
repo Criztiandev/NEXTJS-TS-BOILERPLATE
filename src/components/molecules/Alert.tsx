@@ -5,6 +5,7 @@ import {
 } from "@/components/atoms/alert";
 import { AlertDialogProps } from "@radix-ui/react-alert-dialog";
 import { FC, ReactNode } from "react";
+import { AlertDialog } from "../atoms/alert-dialog";
 
 interface Props extends AlertDialogProps {
   children: ReactNode;
